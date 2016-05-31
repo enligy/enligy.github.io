@@ -1,0 +1,131 @@
+h1, h2, h3, h4, strong {
+    color: $strong-color;
+}
+
+.navbar-brand {
+    color: black !important;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.intro {
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 150px 0px 70px;
+    
+    h1 {
+        padding: 0px 0px 50px;
+        margin: 0px;
+        color: $strong-color;
+    }
+
+}
+
+.footer {
+    text-align: center;
+    padding: 100px 0 20px;
+    font-size: $base-font-size * 0.9;
+}
+
+.courses {
+    margin-top: 80px;
+
+    .tag-cat {
+        font-size: $base-font-size * 1.5;
+    }
+
+    .post-link {
+        font-size: $base-font-size;
+    }
+
+    .post-list {
+        > li {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.post {
+    margin-top: 70px;
+    
+    h2 {
+        margin-top: 70px;
+    }
+    h3 {
+        margin-top: 30px;
+    }
+}
+
+.container, .wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+thead {
+    color: $strong-color;
+}
+
+
+.features {
+    padding: 85px 0px 85px;
+    text-align: center;
+}
+
+.feature {
+    padding: 15px 15px;
+
+    h2 {
+        margin-top: 20px;
+    }
+}
+
+.feature:hover {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
