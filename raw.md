@@ -64,6 +64,7 @@
 - __意志品质 (strengths of will)__: 这些品质和 "行动" 有关. 这些品质帮助你实现目标.
 
 所有品质:
+
 ### [积极乐观 (optimism)](https://characterlab.org/tools/optimism)
 
 意志品质
@@ -170,7 +171,7 @@
 
 ### [自我管控 (self-control)](https://characterlab.org/tools/self-control)
 
-心灵品质, 意志品质
+心灵品质, 思维品质
 
 ####什么是自我管控？
 自我管控，或者简称自控，是指控制自己的反应, 让自己的反应与近期和长远目标相一致.

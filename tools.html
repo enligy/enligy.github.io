@@ -2,64 +2,11 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Enligy</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
-
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/tools/">
-  <link rel="alternate" type="application/rss+xml" title="Enligy" href="http://yourdomain.com/feed.xml">
-
-  <script src="/jquery.js"></script>
-  <script src="/bootstrap/js/bootstrap.min.js"></script>
-</head>
-
+{% include head.html %}
 
 <body> 
 
-<header>
-
-  <nav class="navbar navbar-default navbar-fixed-top">
-    
-    <div class="container">
-      
-      <div class="navbar-header">
-            
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="/">原力觉</a>
-      </div>
-
-      <div id="navbar" class="navbar-collapse collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/tools/">工具箱</a></li>
-              <li><a href="/measures/">测量</a></li>
-              <li><a href="/research/">研究</a></li>
-              <li><a href="/about/">关于我们</a></li>
-            </ul>
-
-            <!-- <form class="navbar-form navbar-right"> -->
-              <!-- <input type="text" class="form-control" placeholder="搜索"> -->
-              <!-- <button type="button" class="btn btn-success">注册</button> -->
-              <!-- <button type="button" class="btn btn-default">登录</button> -->
-            <!-- </form>     -->
-      </div>
-    
-    </div>
-  </nav>
-</header>
-
+{% include header.html %}
 
 <div class="jumbotron intro">
   <div class="container">
@@ -79,7 +26,7 @@
   
       <div class="row">
           <div class="col-lg-4 feature">
-            <img class="img-circle" src="/assets/s_heart.png" alt="strengths of heart" width="100" height="100">
+            <img class="img-circle" src="{{site.baseurl}}/assets/s_heart.png" alt="strengths of heart" width="100" height="100">
             <h2>心灵品质</h2>
             <h3>strengths of heart</h3>
             <p>这些品质和 "助人" 有关，</p>
@@ -88,7 +35,7 @@
           </div><!-- /.col-lg-4 -->
           
           <div class="col-lg-4 feature">
-            <img class="img-circle" src="/assets/s_mind.png" alt="strengths of mind" width="100" height="100">
+            <img class="img-circle" src="{{site.baseurl}}/assets/s_mind.png" alt="strengths of mind" width="100" height="100">
             <h2>思维品质</h2>
             <h3>strengths of mind</h3>
             <p>这些品质和 "思想" 有关，</p>
@@ -97,7 +44,7 @@
           </div><!-- /.col-lg-4 -->
           
           <div class="col-lg-4 feature">
-            <img class="img-circle" src="/assets/s_will.png" alt="strengths of will" width="100" height="100">
+            <img class="img-circle" src="{{site.baseurl}}/assets/s_will.png" alt="strengths of will" width="100" height="100">
             <h2>意志品质</h2>
             <h3>strengths of will</h3>
             <p>这些品质和 "行动" 有关，</p>
@@ -114,48 +61,48 @@
     <div class="row">
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/purpose.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/purpose.jpg" alt="...">
           <div class="caption">
             <h3>高瞻愿景</h3>
             <p>Purpose</p>
             <p>具有高瞻愿景意味着被某些比你自身更广阔的事情所驱动。</p>
-            <p><a href="/tools/purpose/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/purpose/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/self-control.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/self-control.jpg" alt="...">
           <div class="caption">
             <h3>自我管控</h3>
             <p>Self-Control</p>
             <p>简称自控，指控制自己的反应, 让反应与近期和长远目标相一致.</p>
-            <p><a href="/tools/self-control/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/self-control/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/social-intelligence.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/social-intelligence.jpg" alt="...">
           <div class="caption">
             <h3>社会/情绪智力</h3>
             <p>Social/Emotional Intelligence</p>
             <p>社会/情绪智力是理解感受, 并基于感受行动。</p>
-            <p><a href="/tools/social-emotional-intelligence/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/social-emotional-intelligence/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/gratitude.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/gratitude.jpg" alt="...">
           <div class="caption">
             <h3>感恩</h3>
             <p>Gratitude</p>
             <p>感恩是对他人帮助的感激, 是回报他人的欲望.</p>
-            <p><a href="/tools/gratitude/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/gratitude/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
@@ -169,36 +116,36 @@
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/self-control.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/self-control.jpg" alt="...">
           <div class="caption">
             <h3>自我管控</h3>
             <p>Self-Control</p>
             <p>简称自控，指控制自己的反应, 让反应与近期和长远目标相一致.</p>
-            <p><a href="/tools/self-control/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/self-control/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/zest.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/zest.jpg" alt="...">
           <div class="caption">
             <h3>热情</h3>
             <p>Zest</p>
             <p>热情，也可以称为活力 (vitality)，是一种充满激情与能量的生活方式.</p>
-            <p><a href="/tools/zest/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/zest/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/curiosity.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/curiosity.jpg" alt="...">
           <div class="caption">
             <h3>好奇心</h3>
             <p>Curiosity</p>
             <p>好奇心是想要学习或了解某些事物的强烈欲望 -- 搜寻, 只为信息本身。</p>
-            <p><a href="/tools/curiosity/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/curiosity/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
@@ -212,36 +159,36 @@
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/optimism.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/optimism.jpg" alt="...">
           <div class="caption">
             <h3>积极乐观</h3>
             <p>Optimism</p>
             <p>积极乐观是对未来抱有希望，主动吸收正能量，有塑造未来的能动性。</p>
-            <p><a href="/tools/optimism/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/optimism/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/growth-mindset.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/growth-mindset.jpg" alt="...">
           <div class="caption">
             <h3>成长心态</h3>
             <p>Growth Mindset</p>
             <p>我们将成长心态简称为上进。它的核心是人坚信自己的智力是可以发展的。</p>
-            <p><a href="/tools/growth-mindset/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/growth-mindset/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <img src="/assets/grit.jpg" alt="...">
+          <img src="{{site.baseurl}}/assets/grit.jpg" alt="...">
           <div class="caption">
             <h3>坚韧毅力</h3>
             <p>Grit</p>
             <p>坚韧毅力，或者简称坚毅，是坚持不懈，是对长远目标的激情。</p>
-            <p><a href="/tools/grit/" class="btn btn-default" role="button">了解更多</a></p>
+            <p><a href="{{site.baseurl}}/tools/grit/" class="btn btn-default" role="button">了解更多</a></p>
           </div>
         </div>
       </div>
@@ -249,14 +196,7 @@
   </div>
 </div>
 
-<footer class="footer">
-  
-  <div class="container">
-    <p>©2015武汉原力觉网络科技有限责任公司</p>
-  </div>
-
-</footer>
-
+{% include footer.html %}
 
 <script>
   $(function() {
